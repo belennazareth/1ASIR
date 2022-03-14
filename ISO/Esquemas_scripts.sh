@@ -1,198 +1,211 @@
+«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
 
-#  **PRIMERA PLANTILLA**
+    #  **PRIMERA PLANTILLA**
+        # PLANTILLA PARA DOCUMENTAR BASH CON SCRIPT BÁSICO 
 
-nano plantillafinal.sh
+        #nano plantillafinal.sh
 
-    #!/usr/bin/env bash
-    echo "#!/usr/bin/env bash" > fichero.sh
-    echo "#Autor: " >> fichero.sh
-    echo "#Versión: " >> fichero.sh
-    echo "#Descripción: " >> fichero.sh
-    echo "#Fecha de creación: " >> fichero.sh
+            #!/usr/bin/env bash
+            echo "#!/usr/bin/env bash" > fichero.sh
+            echo "#Autor: " >> fichero.sh
+            echo "#Versión: " >> fichero.sh
+            echo "#Descripción: " >> fichero.sh
+            echo "#Fecha de creación: " >> fichero.sh
 
-./plantillafinal.sh (para ejecutarlo)
+        # ./plantillafinal.sh 
 
+«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
 
+    #  **PRIMERA MODIFICACIÓN DE LA PLANTILLA**
+        #Añadida la opción de introducción de datos por teclado
+        #pudiendo así especificar el fichero,
+        #usando read se mantiene pausado hasta que se introduzca.
 
-#  **SEGUNDA PLANTILLA**
+        #nano plantillafinal.sh
 
-nano plantillafinal.sh
+            #!/usr/bin/env bash
+            echo "Introduce el nombre del fichero con extensión .sh: "
+            read nombrefich 
+            echo "#!/usr/bin/env bash" > $nombrefich
+            echo "#Autor: " >> $nombrefich
+            echo "#Versión: " >> $nombrefich
+            echo "#Descripción: " >> $nombrefich
+            echo "#Fecha de creación: " >> $nombrefich
 
-    #!/usr/bin/env bash
-    echo "Introduce el nombre del fichero con extensión .sh: "
-    read nombrefich (con esto podemos esperar a que se meta algo)
-    echo "#!/usr/bin/env bash" > $nombrefich
-    echo "#Autor: " >> $nombrefich
-    echo "#Versión: " >> $nombrefich
-    echo "#Descripción: " >> $nombrefich
-    echo "#Fecha de creación: " >> $nombrefich
+        # ./plantillafinal.sh 
 
-./plantillafinal.sh (para ejecutarlo)
+«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
 
+    #  **SEGUNDA MODIFICACIÓN DE LA PLANTILLA**
+        #
 
+        #nano plantillafinal.sh
 
-#  **TERCERA PLANTILLA**
+        #!/usr/bin/env bash
+        #zona de declaracion de variables
+        ruta="/home/usuario/scripts/"
 
-nano plantillafinal.sh
+        #fin zona
 
-    #!/usr/bin/env bash
-    #zona de declaracion de variables
-    ruta="/home/usuario/scripts/"
+        #zona declaracion de funciones
 
-    #fin zona
+        #fin zona
 
-    #zona declaracion de funciones
+        echo "Introduce el nombre del fichero con extensión .sh: "
+        read nombrefich 
+        echo "#!/usr/bin/env bash" > $ruta$nombrefich
+        echo "#Autor: " >> $ruta$nombrefich
+        echo "#Versión: " >> $ruta$nombrefich
+        echo "#Descripción: " >> $ruta$nombrefich
+        echo "#Fecha de creación: " >> $ruta$nombrefich
 
-    #fin zona
+        # ./plantillafinal.sh 
 
-    echo "Introduce el nombre del fichero con extensión .sh: "
-    read nombrefich (con esto podemos esperar a que se meta algo)
-    echo "#!/usr/bin/env bash" > $ruta$nombrefich
-    echo "#Autor: " >> $ruta$nombrefich
-    echo "#Versión: " >> $ruta$nombrefich
-    echo "#Descripción: " >> $ruta$nombrefich
-    echo "#Fecha de creación: " >> $ruta$nombrefich
+«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
 
-./plantillafinal.sh (para ejecutarlo)
+    #   **TERCERA MODIFICACIÓN DE LA PLANTILLA**
 
+        #nano plantillafinal.sh
 
-#   **CUARTA PLANTILLA**
+        #!/usr/bin/env bash
+        #zona de declaracion de variables
+        ruta="/home/usuario/script/scripts"
 
-nano plantillafinal.sh
+        #fin zona
 
-    #!/usr/bin/env bash
-    #zona de declaracion de variables
-    ruta="/home/usuario/script/scripts"
+        #zona declaracion de funciones
 
-    #fin zona
+        #fin zona
 
-    #zona declaracion de funciones
+        echo "Introduce el nombre del fichero con extensión .sh: "
+        read nombrefich 
+        echo "#!/usr/bin/env bash" > $ruta$nombrefich
+        echo "#Autor: " >> $ruta$nombrefich
+        echo "#Versión: " >> $ruta$nombrefich
+        echo "#Descripción: " >> $ruta$nombrefich
+        echo "#Fecha de creación: " >> $ruta$nombrefich
 
-    #fin zona
+        # ./plantillafinal.sh 
 
-    echo "Introduce el nombre del fichero con extensión .sh: "
-    read nombrefich (con esto podemos esperar a que se meta algo)
-    echo "#!/usr/bin/env bash" > $ruta$nombrefich
-    echo "#Autor: " >> $ruta$nombrefich
-    echo "#Versión: " >> $ruta$nombrefich
-    echo "#Descripción: " >> $ruta$nombrefich
-    echo "#Fecha de creación: " >> $ruta$nombrefich
+«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
 
-./plantillafinal.sh (para ejecutarlo)
+    #  **CUARTA MODIFICACIÓN DE LA PLANTILLA**
 
+        #nano plantillafinal.sh
 
-#  **QUINTA PLANTILLA**
+        #!/usr/bin/env bash
+        #zona de declaracion de variables
+        ruta="/home/usuario/script/scripts"
 
-nano plantillafinal.sh
+        #fin zona
 
-    #!/usr/bin/env bash
-    #zona de declaracion de variables
-    ruta="/home/usuario/script/scripts"
+        #zona declaracion de funciones
 
-    #fin zona
+        #fin zona
 
-    #zona declaracion de funciones
+        echo "Introduce el nombre del fichero con extensión .sh: "
+        read nombrefich 
+        echo "#!/usr/bin/env bash" > $ruta$nombrefich
+        echo "#Autor: " >> $ruta$nombrefich
+        echo "#Versión: " >> $ruta$nombrefich
+        echo "#Descripción: " >> $ruta$nombrefich
+        echo "#Fecha de creación: " >> $ruta$nombrefich
+        chmod a+x $ruta$nombrefich
 
-    #fin zona
+        # ./plantillafinal.sh 
 
-    echo "Introduce el nombre del fichero con extensión .sh: "
-    read nombrefich (con esto podemos esperar a que se meta algo)
-    echo "#!/usr/bin/env bash" > $ruta$nombrefich
-    echo "#Autor: " >> $ruta$nombrefich
-    echo "#Versión: " >> $ruta$nombrefich
-    echo "#Descripción: " >> $ruta$nombrefich
-    echo "#Fecha de creación: " >> $ruta$nombrefich
-    chmod a+x $ruta$nombrefich
+«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
 
-./plantillafinal.sh (para ejecutarlo)
+    #  **QUINTA MODIFICACIÓN DE LA PLANTILLA**
 
+        #nano plantillafinal.sh
 
-#  **SEXTA PLANTILLA**
+        #!/usr/bin/env bash
+        #zona de declaracion de variables
+        ruta="/home/usuario/script/scripts"
 
-nano plantillafinal.sh
+        #fin zona
 
-    #!/usr/bin/env bash
-    #zona de declaracion de variables
-    ruta="/home/usuario/script/scripts"
+        #zona declaracion de funciones
 
-    #fin zona
+        #fin zona
 
-    #zona declaracion de funciones
+        echo "Introduce el nombre del fichero con extensión .sh: "
+        read nombrefich 
+        echo "#!/usr/bin/env bash" > $ruta$nombrefich
+        echo "#Autor: " >> $ruta$nombrefich
+        echo "#Versión: " >> $ruta$nombrefich
+        echo "#Descripción: " >> $ruta$nombrefich
+        echo "#Fecha de creación: $(date)" >> $ruta$nombrefich
+        echo "#Fecha de modificación: " >> $ruta$nombrefich
+        chmod a+x $ruta$nombrefich
 
-    #fin zona
+        # ./plantillafinal.sh 
 
-    echo "Introduce el nombre del fichero con extensión .sh: "
-    read nombrefich (con esto podemos esperar a que se meta algo)
-    echo "#!/usr/bin/env bash" > $ruta$nombrefich
-    echo "#Autor: " >> $ruta$nombrefich
-    echo "#Versión: " >> $ruta$nombrefich
-    echo "#Descripción: " >> $ruta$nombrefich
-    echo "#Fecha de creación: $(date)" >> $ruta$nombrefich
-    echo "#Fecha de modificación: " >> $ruta$nombrefich
-    chmod a+x $ruta$nombrefich
+«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
 
-./plantillafinal.sh (para ejecutarlo)
+    #  **SEXTA MODIFICACIÓN DE LA PLANTILLA**
 
+        #nano plantillafinal.sh
 
-#  **SEPTIMA PLANTILLA**
+        #!/usr/bin/env bash
+        #zona de declaracion de variables
+        ruta="/home/usuario/script/scripts"
 
-nano plantillafinal.sh
+        #fin zona
 
-    #!/usr/bin/env bash
-    #zona de declaracion de variables
-    ruta="/home/usuario/script/scripts"
+        #zona declaracion de funciones
 
-    #fin zona
+        #fin zona
 
-    #zona declaracion de funciones
+        echo "Introduce el nombre del fichero con extensión .sh: "
+        read nombrefich 
+        if [ -f $ruta$nombrefich ];then
+            echo "$nombrefich ya existe"
+            exit
+        fi
 
-    #fin zona
+        echo "#!/usr/bin/env bash" > $ruta$nombrefich
+        echo "#Autor: $USER" >> $ruta$nombrefich
+        echo "#Versión: " >> $ruta$nombrefich
+        echo "#Descripción: " >> $ruta$nombrefich
+        echo "#Fecha de creación: $(date)" >> $ruta$nombrefich
+        echo "#Fecha de modificación: " >> $ruta$nombrefich
+        chmod a+x $ruta$nombrefich
 
-    echo "Introduce el nombre del fichero con extensión .sh: "
-    read nombrefich (con esto podemos esperar a que se meta algo)
-    if [ -f $ruta$nombrefich ];then
-        echo "$nombrefich ya existe"
-        exit
-    fi
+        # ./plantillafinal.sh 
 
-    echo "#!/usr/bin/env bash" > $ruta$nombrefich
-    echo "#Autor: $USER" >> $ruta$nombrefich
-    echo "#Versión: " >> $ruta$nombrefich
-    echo "#Descripción: " >> $ruta$nombrefich
-    echo "#Fecha de creación: $(date)" >> $ruta$nombrefich
-    echo "#Fecha de modificación: " >> $ruta$nombrefich
-    chmod a+x $ruta$nombrefich
+«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
 
-./plantillafinal.sh (para ejecutarlo)
+    #  **SÉPTIMA MODIFICACIÓN DE LA PLANTILLA**
 
+        #nano plantillafinal.sh
 
-#  **OCTAVA PLANTILLA**
+        #!/usr/bin/env bash
+        #zona de declaracion de variables
+        ruta="/home/usuario/script/scripts"
 
-nano plantillafinal.sh
+        #fin zona
 
-    #!/usr/bin/env bash
-    #zona de declaracion de variables
-    ruta="/home/usuario/script/scripts"
+        #zona declaracion de funciones
 
-    #fin zona
+        #fin zona
 
-    #zona declaracion de funciones
+        echo "Introduce el nombre del fichero con extensión .sh: "
+        read nombrefich 
+        if [ -f $ruta$nombrefich ];then
+            echo "$nombrefich ya existe"
+            exit
+        fi
 
-    #fin zona
+        echo "#!/usr/bin/env bash" > $ruta$nombrefich
+        echo "#Autor: $USER" >> $ruta$nombrefich
+        echo "#Versión: $(bash --version)" >> $ruta$nombrefich
+        echo "#Descripción: " >> $ruta$nombrefich
+        echo "#Fecha de creación: $(date)" >> $ruta$nombrefich
+        echo "#Fecha de modificación: " >> $ruta$nombrefich
+        chmod a+x $ruta$nombrefich
 
-    echo "Introduce el nombre del fichero con extensión .sh: "
-    read nombrefich (con esto podemos esperar a que se meta algo)
-    if [ -f $ruta$nombrefich ];then
-        echo "$nombrefich ya existe"
-        exit
-    fi
+        # ./plantillafinal.sh 
 
-    echo "#!/usr/bin/env bash" > $ruta$nombrefich
-    echo "#Autor: $USER" >> $ruta$nombrefich
-    echo "#Versión: $(bash --version)" >> $ruta$nombrefich
-    echo "#Descripción: " >> $ruta$nombrefich
-    echo "#Fecha de creación: $(date)" >> $ruta$nombrefich
-    echo "#Fecha de modificación: " >> $ruta$nombrefich
-    chmod a+x $ruta$nombrefich
-
-./plantillafinal.sh (para ejecutarlo)
+«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
