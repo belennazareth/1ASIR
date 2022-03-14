@@ -37,7 +37,9 @@
 «»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»««»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»»«»««»
 
     #  **SEGUNDA MODIFICACIÓN DE LA PLANTILLA**
-        #
+        #Se añaden zonas de declaración de variables y funciones,
+        #donde ruta es una variable que recoje el destino del fichero
+        #y se añade como cualquier otra variable, con $.
 
         #nano plantillafinal.sh
 
