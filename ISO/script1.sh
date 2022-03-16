@@ -43,9 +43,3 @@ f_pausar
 echo "Introduce un usuario: "
 read usuario
 f_existeUsuario $usuario
-
-
-
-
-
-
