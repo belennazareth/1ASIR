@@ -49,4 +49,3 @@ f_existeUsuario $usuario
 
 
 
-#usuario="personita";egrep "^$usuario" /etc/passwd;echo $?
