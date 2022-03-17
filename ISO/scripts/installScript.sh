@@ -8,23 +8,33 @@
     
             #zona declaracion de funciones
             
-            #Comprobación existencia del binario
+            #Comprobación existencia del binario:
             function f_existBinar {
-                whereis
+                
+                if dpkg -l $1 &> /dev/null;
+                then
+                    return 0
+                else
+                    return 1
+                fi
             }
+            
+            #Comprobación conexión:
+            function f_connect {
+                ping -c 1 deb.debian.org &>/dev/null
+            }
+
+            function f_admin {
+
+            }
+
+            function f_browsePack {
+
+            }
+
+            function f_installPack {
+
+            }
+
             #fin zona
     
-            echo "Introduce el nombre del fichero con extensión .sh: "
-            read nombrefich 
-            if [ -f $ruta$nombrefich ];then
-                echo "$nombrefich ya existe"
-                exit
-            fi
-    
-            echo "#!/usr/bin/env bash" > $ruta$nombrefich
-            echo "#Autor: $USER" >> $ruta$nombrefich
-            echo "#Versión: $(bash --version | egrep 'GNU bash')" >> $ruta$nombrefich
-            echo "#Descripción: " >> $ruta$nombrefich
-            echo "#Fecha de creación: $(date)" >> $ruta$nombrefich
-            echo "#Fecha de modificación: " >> $ruta$nombrefich
-            chmod a+x $ruta$nombrefich
