@@ -20,6 +20,8 @@
         <br />
         Correo Electrónico: <input type="email" name="email_control" />
     </fieldset>
+
+
     <fieldset>
         <legend> Otros </legend>
 
@@ -31,7 +33,52 @@
 
         <br />
         Elija una hora: <input type="datetime" >
+
+        <br />
+        <textarea name="coment_control" rows="6" cols="40"> Por favor, escriba aquí </textarea>
+    
     </fieldset>
 
+
+    <fieldset>
+        <legend> Preferencias </legend>
+        
+        <br />
+        Elige un tipo de procesador 
+        <select name="sistema_control">
+            <option value="AMD"> AMD </option>
+            <option value="INTEL"> INTEL </option>
+        </select>
+        
+        <br />
+        ¿Que IDE prefieres? 
+        <input name="eclipse_control" type="radio"  value="eclipse" /> Eclipse 
+        <input name="netbeans_control" type="radio" value="netbeans" /> Netbeans
+        <input name="notepad_control" type="radio"  value="notepad" /> Notepad
+        <input name="vsc_control" type="radio" value="vsc" /> Visual Studio Code
+        
+        <br />
+        Módulos:
+        <br />
+        <input name="redes_control" type="checkbox" value="redes" /> Redes
+        <br />
+        <input name="so_control" type="checkbox" value="so" /> Sistemas Operativos
+        <br />
+        <input name="ldm_control" type="checkbox" value="ldm" /> Lenguaje de marcas
+        <br />
+        <input name="bbdd_control" type="checkbox" value="bbdd" /> Base de datos 
+        <br />
+        <br />
+        Elija un fichero: 
+
+        <br />
+        Elija un color: 
+        <input type="color" name="color_control" />
+
+        <br />
+        <input type="send" value="Enviar" />
+
+    
+    </fieldset>
     </p>
     
