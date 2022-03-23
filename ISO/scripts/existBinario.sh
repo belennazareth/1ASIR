@@ -1,8 +1,7 @@
-#Script para comprobar la instalación de paquetes
+#Script para comprobar la existencia del binario
 
 #!/usr/bin/env bash
             #zona de declaracion de variables
-            ruta="/home/usuario/script/scripts"
     
             #fin zona
     
@@ -17,23 +16,6 @@
                 else
                     return 1
                 fi
-            }
-            
-            #Comprobación conexión:
-            function f_connect {
-                ping -c 1 deb.debian.org &>/dev/null
-            }
-
-            function f_admin {
-
-            }
-
-            function f_browsePack {
-
-            }
-
-            function f_installPack {
-
             }
 
             #fin zona
