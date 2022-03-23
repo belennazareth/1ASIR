@@ -13,12 +13,26 @@
 #Zona de declaración de funciones
 
 function f_help {
+    
+}
+
+function f_check {
     for i in $@ 
     do
-    if [[ $i = "--help" ]]; then
-    post echo [[ $i --help ]]
-    else
-    post echo "No se ha podido mostrar la ayuda"
-    fi
+    case $i 
+    in
+    "--help")
+    f_help
+    ;;
+    "-h")
+    f_help
+    ;;
+    "-help")
+    f_help
+    ;;
+    f_help
+    ;;
+    echo "No se ha podido mostrar la ayuda"
+    esac
     done
 }
