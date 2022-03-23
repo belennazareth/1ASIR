@@ -13,26 +13,27 @@
 #Zona de declaración de funciones
 
 function f_help {
-    
+    echo "-Uso de funciones: ./funciones2.sh"
+    echo "-Lista de opciones: ... "
 }
 
 function f_check {
-    for i in $@ 
+    while [[ $# > 0 ]]
     do
-    case $i 
-    in
-    "--help")
-    f_help
-    ;;
-    "-h")
-    f_help
-    ;;
-    "-help")
-    f_help
-    ;;
-    f_help
-    ;;
-    echo "No se ha podido mostrar la ayuda"
+    case $1 in
+        "--help")
+            f_help
+        ;;
+        "-h")
+            f_help
+        ;;
+        "-help")
+            f_help
+        ;;
     esac
+    shift
     done
 }
+
+read var 
+f_check $var
